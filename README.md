@@ -1,9 +1,17 @@
 # docker-agno-ui
+
 Dockerized [Agno](https://www.agno.com/) Playground UI
+
+![logo](./docs/logo.png)
+
+
+
 
 ## Overview
 
 This project provides a Docker container and network setup for the [Agno Playground](https://docs.agno.com/agent-ui/introduction) (Agent UI). It packages the Agno Agent UI (Next.js application) into a multi-stage Docker image and orchestrates it with Docker Compose.
+
+![Playground](./docs/ui.png)
 
 The goal is to create an isolated Docker network where multiple agent containers can communicate and be managed through the Playground UI.
 
