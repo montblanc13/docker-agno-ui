@@ -1,0 +1,32 @@
+# .dockerignore for repository root
+## Ignore local source directory; repository will be cloned in Dockerfile
+agent-ui/
+
+# Ignore node_modules and pnpm store
+**/node_modules
+**/.pnpm
+
+# Ignore Next.js build output and static exports in agent-ui
+agent-ui/.next
+agent-ui/out
+agent-ui/dist
+
+# Ignore environment files
+agent-ui/.env.local
+agent-ui/.env.*.local
+
+# Ignore log files
+**/npm-debug.log*
+**/pnpm-debug.log*
+**/yarn-debug.log*
+
+# Ignore IDE/editor directories
+**/.vscode
+**/.idea
+
+# Ignore system files
+**/.DS_Store
+
+# Ignore Git metadata
+**/.git
+**/.gitignore

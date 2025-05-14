@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  agent-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: agent-ui:latest
+    container_name: agent-ui
+    ports:
+      - "3000:3000"
+    volumes:
+      # Bind mount for accessing application logs from host
+      - ./logs:/app/logs
+    networks:
+      - agents-net
+
+networks:
+  agents-net:
+    driver: bridge
